@@ -28,68 +28,126 @@ services:
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+- serviceName: project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:shshi_orcl
+  packages:
+  - name: LatestScafoldProjectProject
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 configurationVariables:
   ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.startupBackoffSecs
   : "10"
-  ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.serverName
-  : adapter-oracle-121-on-amazonrds.cdmjexwbzoym.us-east-1.rds.amazonaws.com
+  ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.shshi_orcl.connectionManagerSettings.poolIncrementSize
+  : "1"
+  ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.shshi_orcl.connectionManagerSettings.startupRetryCount
+  : "0"
   ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.dbType
   : ORACLE
-  ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.poolable
+  ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.shshi_orcl.connectionManagerSettings.poolable
   : "false"
-  ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.password
+  ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.shshi_orcl.connectionSettings.password
   : "{AES}gOk3wygfWVjWqDc4SLehnQ=="
+  ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.shshi_orcl.connectionManagerSettings.maximumPoolSize
+  : "10"
   ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.otherProperties
   : driverType=thin;
   ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.expireTimeout
   : "1000"
-  ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.networkProtocol
-  : tcp
+  ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.shshi_orcl.connectionSettings.trustStore
+  : ""
   ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.transactionType
   : NO_TRANSACTION
   ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.databaseName
   : ORCL
   ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.maximumPoolSize
   : "10"
+  ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.shshi_orcl.connectionSettings.dbType
+  : ORACLE
   ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.keyStore
   : ""
-  ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolable
-  : "false"
   ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.datasourceClass
   : com.wm.dd.jdbcx.oracle.OracleDataSource
   ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.trustStore
   : ""
+  ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.shshi_orcl.connectionManagerSettings.heartBeatInterval
+  : "0"
   ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.serverName
   : adapter-oracle-121-on-amazonrds.cdmjexwbzoym.us-east-1.rds.amazonaws.com
   ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.user
   : JDBC_BVT
-  ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.transactionType
-  : NO_TRANSACTION
   ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.networkProtocol
   : tcp
-  ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.databaseName
-  : ORCL
+  ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.shshi_orcl.connectionSettings.networkProtocol
+  : tcp
   ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.driverType
   : Progress® DataDirect®
-  ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.portNumber
-  : "1521"
+  ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.shshi_orcl.connectionSettings.datasourceClass
+  : com.wm.dd.jdbcx.oracle.OracleDataSource
   ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.datasourceClass
   : com.wm.dd.jdbcx.oracle.OracleDataSource
-  ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.trustStore
-  : ""
   ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.driverType
   : Progress® DataDirect®
-  ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.keyStore
-  : ""
+  ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.shshi_orcl.connectionManagerSettings.minimumPoolSize
+  : "1"
   ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.blockingTimeout
   : "1000"
   ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.dbType
   : ORACLE
+  ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.shshi_orcl.connectionManagerSettings.startupBackoffSecs
+  : "10"
   ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolIncrementSize
   : "1"
-  ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.startupRetryCount
-  : "0"
   ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.heartBeatInterval
+  : "0"
+  ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionEnabled
+  : "false"
+  ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.shshi_orcl.connectionManagerSettings.expireTimeout
+  : "1000"
+  ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.shshi_orcl.connectionSettings.serverName
+  : adapter-oracle-121-on-amazonrds.cdmjexwbzoym.us-east-1.rds.amazonaws.com
+  ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.otherProperties
+  : driverType=thin;
+  ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.shshi_orcl.connectionEnabled
+  : "false"
+  ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.serverName
+  : adapter-oracle-121-on-amazonrds.cdmjexwbzoym.us-east-1.rds.amazonaws.com
+  ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.poolable
+  : "false"
+  ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.shshi_orcl.connectionSettings.keyStore
+  : ""
+  ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.shshi_orcl.connectionSettings.otherProperties
+  : driverType=thin;
+  ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.password
+  : "{AES}gOk3wygfWVjWqDc4SLehnQ=="
+  ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.shshi_orcl.connectionSettings.transactionType
+  : LOCAL_TRANSACTION
+  ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.networkProtocol
+  : tcp
+  ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolable
+  : "false"
+  ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.shshi_orcl.connectionSettings.portNumber
+  : "1521"
+  ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.transactionType
+  : NO_TRANSACTION
+  ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.shshi_orcl.connectionManagerSettings.blockingTimeout
+  : "1000"
+  ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.databaseName
+  : ORCL
+  ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.portNumber
+  : "1521"
+  ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.shshi_orcl.connectionSettings.databaseName
+  : ORCL
+  ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.trustStore
+  : ""
+  ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.shshi_orcl.connectionSettings.user
+  : JDBC_BVT
+  ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.shshi_orcl.connectionSettings.driverType
+  : Progress® DataDirect®
+  ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.keyStore
+  : ""
+  ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.startupRetryCount
   : "0"
   ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.password
   : "{AES}gOk3wygfWVjWqDc4SLehnQ=="
@@ -97,11 +155,7 @@ configurationVariables:
   : JDBC_BVT
   ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionEnabled
   : "false"
-  ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionEnabled
-  : "false"
   ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.minimumPoolSize
   : "1"
   ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.portNumber
   : "1521"
-  ? artConnection.LatestScafoldProjectProject.project.latestscafoldproject.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.otherProperties
-  : driverType=thin;
